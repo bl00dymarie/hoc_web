@@ -1,6 +1,3 @@
-- if @accepting_applications
-  %p.text-center
-    Double Union is currently accepting applications for membership! Learn more on the #{ link_to "membership page", membership_path, class: "alert-link" }.
 .jumbotron
   .container
     .jumbotron-content
@@ -10,11 +7,10 @@
       %p
         Die Heart of Code richtet sich an alle PyLadies, und RailsGirls, JavaLassies und 3D-Feen, Gamerinnen, Arduinas, NetzwerkNixen, LötGören, RaspberryRabaukinnen und alle anderen Frauensternchen mit Interesse an Bits, Bytes und Basteln. Sie ist ein Ort zum gemeinsamen Frickeln, kreativ werden und Abnerden - für mehr Vernetzung, mehr Gemeinschaft, und vor allem natürlich: mehr Hacken.
         button_text = @accepting_applications ? 'Apply for Membership' : 'Learn about Membership'
-      = link_to button_text, membership_path, class: 'btn btn-primary btn-lg'
       = link_to 'Support Double Union', support_path, class: 'btn btn-default btn-lg'
 
 .container
-  %h3 Double Union is a space for your projects
+  %h3 Die Heart of Code: ein Hackspace für Frauensternchen!
   %p
   Wir wollen Frauen (Menschen, die sich als female identifizieren) den Zugang zu Informationstechnologien, Tools und Inhalten erleichtern, und damit die Hacking-Community und Tech-Landschaft langfristig diverser gestalten.</p>
 
