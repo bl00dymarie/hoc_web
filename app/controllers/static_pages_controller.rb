@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
   def membership
   end
 
-  def policies
+  def codeofconduct
   end
 
   def press
@@ -20,9 +20,6 @@ class StaticPagesController < ApplicationController
   end
 
   def visit
-  end
-
-  def base_assumptions
   end
 
   def leadership
@@ -41,6 +38,6 @@ class StaticPagesController < ApplicationController
   end
 
   def configurations
-    JSON.load(open("#{DU_APP_URL}/configurations.json"))
+    JSON.load(open("#{HOC_APP_URL}/configurations.json"))
   end
 end

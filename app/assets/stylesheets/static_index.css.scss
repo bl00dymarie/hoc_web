@@ -41,13 +41,13 @@ body.static_pages.index {
   }
 
   .jumbotron {
-    background: pink;
-    background-image: url('https://s3-us-west-1.amazonaws.com/doubleunion/jumbotron.png');
+    background: url(banner.jpg) center center;
     background-position: center;
     .jumbotron-content {
       background-color: rgba(255, 255, 255, 0.8);
       h2 {
         margin-top: 0;
+        font-size: 32px;
       }
     }
   }

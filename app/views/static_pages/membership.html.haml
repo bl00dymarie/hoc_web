@@ -2,18 +2,18 @@
 
 - unless @accepting_applications
   .alert.alert-info
-    We aren't currently accepting applications. Join our #{ link_to "general interest mailing list", "http://lists.doubleunion.org/listinfo.cgi/doubleunion-doubleunion.org", class: "alert-link"} to be notified when applications are open again!
+    We aren't currently accepting applications. Join our #{ link_to "Heart of Code Slack", "http://heartofcode.slack.com", class: "alert-link"} to be notified when applications are open again!
 
 %p
-  New members join through an application and voting process. If you're interested in being part of Double Union but aren't sure whether you're “good enough,” please apply - we don't evaluate applicants on whether they're “cool” or accomplished. Read on to hear about what we're looking for, and don't let #{ link_to "impostor syndrome", "http://geekfeminism.wikia.com/wiki/Impostor_syndrome" } stop you.
+  New members join through an application and voting process. If you're interested in being part of Heart of Code but aren't sure whether you're “good enough,” please apply - we don't evaluate applicants on whether they're “cool” or accomplished. Read on to hear about what we're looking for, and don't let #{ link_to "impostor syndrome", "http://geekfeminism.wikia.com/wiki/Impostor_syndrome" } stop you.
 
 %p
-  Along with submitting an application, a qualification for membership is that you've met at least one member who is willing to say you seem like a respectful potential member (such as that you'd respect the #{ link_to "base assumptions", base_assumptions_path }, #{ link_to "anti-harassment policy", policies_path }, and responsibilities of being a member). Please come to events to meet some of us! Or if you'd prefer a quieter opportunity to meet just a couple members over a cup of tea, email #{ mail_to I18n.t('du.join_email') } and we'll set this up.
+  Along with submitting an application, a qualification for membership is that you've met at least one member who is willing to say you seem like a respectful potential member (such as that you'd respect the #{ link_to "code of conduct", codeofconduct_path }, and responsibilities of being a member). Please come to events to meet some of us! Or if you'd prefer a quieter opportunity to meet just a couple members over a cup of tea, email #{ mail_to I18n.('hoc.hello_email') } and we'll set this up.
 
 %h3 Membership qualifications
 
 %p
-  Double Union welcomes members with a broad variety of interests, skills, identities, backgrounds, and histories. What we have in common is a #{ link_to "set of values (base assumptions)", base_assumptions_path } and an interest in supporting each other and Double Union. We want to accept more members who share our values and our commitment to building a safer space together.
+  Heart of Code welcomes members with a broad variety of interests, skills, identities, backgrounds, and histories. What we have in common is a #{ link_to "set of values (code of conduct)", codeofconduct_path } and an interest in supporting each other at the Heart of Code. We want to accept more members who share our values and our commitment to building a safer space together.
 
 %p
   To keep the focus on a great space for women (trans, cis, queer, straight, and not-fitting-into-those-labels/other), all members must identify as women in a way that's significant to them. Members must also be old enough to carry out any responsibilities. Guests of members may be any gender or age. We specifically encourage bringing (supervised) children to the space.
@@ -21,7 +21,7 @@
 %h3 How do members use the space?
 
 %p
-  To get a sense of what current members work on in the space, see our #{ link_to "visitor information", visit_path}, #{ link_to "blog", TUMBLR_URL}, and #{ link_to "Twitter", TWITTER_URL} to find out about events/projects and equipment, or come to some events!
+  To get a sense of what current members work on in the space, come to our weekly Damensalon and follow us on #{ link_to "Twitter", TWITTER_URL} to find out about events/projects and equipment, or come to some events!
 
 %p
   People work on many things in the space, including adding lights to bicycles, zine making, electronics, public speaking, finding jobs, contributing to open source software, printmaking and textiles, 3D printing, CNC machining, fiber arts, sewing/serging, and reading in the library. We encourage coworking in the space, as long as it doesn't interfere with events or members using the space for its primary purpose: working on projects in a safe and welcoming environment.
@@ -68,13 +68,12 @@
   %h3 Apply
 
   %p
-    New members join through an application and voting process. To apply for Double
-    Union membership, you'll start by authenticating with GitHub or Google.
+    New members join through an application and voting process. To apply for Heart of Code membership, you'll start by authenticating with GitHub (or Google).
 
   %b
-    Before you apply, though, please read through our #{ link_to "Base Assumptions", base_assumptions_path }. They are very important to us and we want all members to be comfortable with them.
+    Before you apply, though, please read through our #{ link_to "Code of Conduct", codeofconduct_path }. They are very important to us and we want all members to be comfortable with them.
 
-  %p= link_to 'Apply to Join', "#{DU_APP_URL}/login", class: 'btn btn-primary btn-lg'
+  %p= link_to 'Apply to Join', "#{HOC_APP_URL}/login", class: 'btn btn-primary btn-lg'
 
 %h3 Current members
 

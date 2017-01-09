@@ -1,14 +1,13 @@
 %ul
   %li= link_to_unless_current 'About', about_path
-  %li= link_to_unless_current 'Policies', policies_path
+  %li= link_to_unless_current 'Code of Conduct', codeofconduct_path
   %li= link_to_unless_current 'Visiting', visit_path
   %li= link_to_unless_current 'Membership', membership_path
   %li= link_to_unless_current 'Press', press_path
   %li= link_to_unless_current 'Support', support_path
-  %li= link_to_unless_current 'Base Assumptions', base_assumptions_path
   %li= external_link_to 'Twitter', TWITTER_URL
 
 .copyright
-  &copy;
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a><br>
   = Time.now.year
-  Double Union
+  Heart of Code

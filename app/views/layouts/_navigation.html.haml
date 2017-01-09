@@ -6,12 +6,11 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to image_tag( 'double_union_logo.png'), root_path, class: 'navbar-brand', id: '#logo'
+      = link_to image_tag( 'hoc-logo.png'), root_path, class: 'navbar-brand', id: '#logo'
     .collapse.navbar-collapse.navbar-ex1-collapse
       %ul.nav.navbar-nav
         %li= link_to 'Membership', membership_path
-        %li= external_link_to 'Blog', TUMBLR_URL
         %li= link_to 'About', about_path
       %ul.nav.navbar-nav.pull-right
         %li{'data-toggle' => 'modal', 'data-target' => '#log_in'}
-          = link_to "Log In", "#{DU_APP_URL}/login"
+          = link_to "Log In", "#{HOC_APP_URL}/login"
