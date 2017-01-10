@@ -13,9 +13,9 @@ describe "visiting all the pages" do
   let(:config_response_body) { { configurations: { accepting_applications: false } } }
 
   before do
-    stub_request(:get, "https://app.doubleunion.org/public_members.json").
+    stub_request(:get, "https://app.heartofcode.org/public_members.json").
       to_return(status: 200, body: membership_response_body.to_json, headers: {} )
-    stub_request(:get, "https://app.doubleunion.org/configurations.json").
+    stub_request(:get, "https://app.heartofcode.org/configurations.json").
       to_return(:status => 200, :body => config_response_body.to_json, :headers => {})
   end
 
@@ -26,7 +26,7 @@ describe "visiting all the pages" do
 
     go_home
 
-    click_link "Support Double Union"
+    click_link "Support Heart of Code"
     expect(page).to have_content "Make a donation"
 
     go_home
@@ -41,8 +41,8 @@ describe "visiting all the pages" do
 
     go_home
 
-    click_link "Visiting"
-    expect(page).to have_content "We are located"
+    click_link "Kalender"
+    expect(page).to have_content "Zückt die Kalender!"
 
     go_home
 
@@ -54,7 +54,7 @@ describe "visiting all the pages" do
     go_home
 
     click_link "Support"
-    expect(page).to have_content "Double Union is supported entirely by donations"
+    expect(page).to have_content "Heart of Code is supported entirely by donations"
 
     go_home
 
@@ -65,5 +65,5 @@ end
 
 def go_home
   click_link "#logo"
-  expect(page).to have_content "Double Union is a hacker/maker space for women in San Francisco."
+  expect(page).to have_content "Heart of Code is a hacker/maker space for women in San Francisco."
 end

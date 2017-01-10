@@ -1,16 +1,10 @@
-DU_APP_URL           = ENV["APP_URL"] || "https://app.doubleunion.org"
+HOC_APP_URL           = ENV["APP_URL"] || "https://app.heartofcode.org"
 
-TWITTER_USERNAME     = 'doubleunionsf'
+TWITTER_USERNAME     = "heartofcode"
 TWITTER_URL          = "https://twitter.com/#{TWITTER_USERNAME}"
+KALENDER_URL         = "http://heartofcode.org/kalender"
 
-PRESS_EMAIL          = 'press@doubleunion.org'
-PAYPAL_EMAIL         = 'paypal@doubleunion.org'
-JOIN_EMAIL           = I18n.t('du.join_email')
-MEMBERSHIP_EMAIL     = I18n.t('du.membership_email')
+HELLO_EMAIL          = I18n.t('hoc.hello_email')
+CODE_EMAIL           = I18n.t('hoc.code_email')
 
-TUMBLR_BASE          = 'doubleunion.tumblr.com'
-TUMBLR_URL           = "http://#{TUMBLR_BASE}"
-
-MAILING_LIST_GENERAL = "http://lists.doubleunion.org/listinfo.cgi/doubleunion-doubleunion.org"
-GOOGLE_ANALYTICS_ID  = 'UA-47411942-1'
-S3_BUCKET            = "https://s3-us-west-1.amazonaws.com/doubleunion"
+SLACK                = "https://heartofcode.slack.com"

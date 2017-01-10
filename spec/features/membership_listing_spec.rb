@@ -13,9 +13,9 @@ describe "Visiting the /membership page" do
     let(:config_response_body) { { configurations: { accepting_applications: false } } }
 
     before do
-      stub_request(:get, "https://app.doubleunion.org/public_members.json").
+      stub_request(:get, "https://app.heartofcode.org/public_members.json").
         to_return(status: 200, body: membership_response_body.to_json, headers: {} )
-      stub_request(:get, "https://app.doubleunion.org/configurations.json").
+      stub_request(:get, "https://app.heartofcode.org/configurations.json").
         to_return(:status => 200, :body => config_response_body.to_json, :headers => {})
     end
 
@@ -29,8 +29,8 @@ describe "Visiting the /membership page" do
   context "when the app is down" do
 
     before do
-      stub_request(:get, "https://app.doubleunion.org/public_members.json").to_return(status: 400)
-      stub_request(:get, "https://app.doubleunion.org/configurations.json").to_return(status: 400)
+      stub_request(:get, "https://app.heartofcode.org/public_members.json").to_return(status: 400)
+      stub_request(:get, "https://app.heartofcode.org/configurations.json").to_return(status: 400)
     end
 
     it "still loads the page" do

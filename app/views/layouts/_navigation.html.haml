@@ -9,6 +9,7 @@
       = link_to image_tag( 'hoc-logo.png'), root_path, class: 'navbar-brand', id: '#logo'
     .collapse.navbar-collapse.navbar-ex1-collapse
       %ul.nav.navbar-nav
+        %li= link_to 'Kalender', kalender_path
         %li= link_to 'Membership', membership_path
         %li= link_to 'About', about_path
       %ul.nav.navbar-nav.pull-right

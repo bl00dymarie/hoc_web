@@ -1,10 +1,13 @@
 require 'open-uri'
 
 class StaticPagesController < ApplicationController
-  before_action :set_configurations, only: [:index, :membership]
+  before_action :set_configurations, only: [:index, :kalender, :membership]
 
   def index
     set_use_container(false)
+  end
+
+  def kalender
   end
 
   def membership
@@ -17,9 +20,6 @@ class StaticPagesController < ApplicationController
   end
 
   def support
-  end
-
-  def visit
   end
 
   def leadership
